@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Faiza Ziani</title>
+</head>
+<style>
+/*blogs section start*/
+.slider-wrapper {
+    overflow: hidden;
+    max-width: 1000px;
+    margin: 0 70px 55px;
+  }
+  
+  .card-list .card-item {
+    height: auto;
+    user-select: none;
+    padding: 35px;
+    display: flex;
+    
+    flex-direction: column;
+    max-width: 240px; /*change this valeur*/
+    width: 10%;
+    justify-content: center;
+    border-radius: 30px 0 30px 0;
+    backdrop-filter: blur(30px);
+    background: #ffffff33;
+    
+    border: 1px solid #ffffff80;
+  }
+  .card-list .card-item .message-button:hover {
+    background: #ffffff1a;
+    border: 2px solid #fff;
+    color: #fff;
+  }
+  .slider-wrapper .swiper-pagination-bullet {
+    background: #fff;
+    height: 13px;
+    width: 13px;
+    opacity: 0.5;
+  } 
+  .slider-wrapper .swiper-pagination-bullet-active {
+    opacity: 1;
+  }
+  .slider-wrapper .swiper-slide-button {
+    color: #fff;
+    margin-top: -35px;
+    transition: 0.5s;
+  }
+  .blog_content {
+    
+    height: 210px;
+    width: 250px;
+  }
+  .blog_content h1 {
+    margin: 0 0 1rem 0;
+    font-size: 1.5rem;
+    
+    color: #fff;
+  }
+  
+  .blog_content p {
+    margin: 0 0 2rem 0;
+    font-size: 1.3rem;
+    
+    color: whitesmoke;
+  }
+  
+  .btn_primary {
+    border: none;
+    outline: none;
+    background: #769EAF;
+    padding: .6rem .6rem;
+    border-radius: 30px;
+    color: white;
+    font-size: 1.2rem;
+    
+    transition: all 0.2s ease-in;
+    text-decoration: none;
+  }
+  
+  .blog_content .btn_primary:hover {
+    color: #fff;
+    background-color: transparent;
+    border: 1px solid #fff;
+  }
+  @media (max-width: 768px) {
+    .slider-wrapper {
+      margin: 0 20px 40px;
+      padding: 0 30px;
+    }
+  }
+  /*blogs section end*/
+</style>
+<body>
+    <div class="container">
+       <header id="navbar">
+        <nav>
+            <div class="logo"><a href=""></a></div>
+
+            <ul>
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+       </header>
+        <div class="content" id="home">
+            <div class="text">
+                <h3>Hello my Name is <br><br><span class="name" style="text-shadow: 2px 2px 4px #fff;">𝓕𝓪𝓲𝔃𝓪 𝓩𝓲𝓪𝓷𝓲</span> <br><br>And I'm a Web Developer</h3><br>
+                <div class="media">
+                    <i class="fa-brands fa-facebook"></i>
+                    <a href="https://www.linkedin.com/in/faiza-ziani-103a361b5/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://github.com/faizazn/" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <i class="fa-regular fa-envelope"></i>
+                </div><br>
+                <a href="cv_faiza.pdf" download="cv_faiza.pdf">
+                  <button class="download">Download CV <i class="fa-regular fa-circle-down"></i></button>
+              </a>
+            </div>
+            <div class="image">
+                <div class="box">
+                  <img src="modif.PNG" alt="">
+            </div>
+            </div>
+        </div>
+        <div class="about" id="about">
+           
+            <div class="text">
+                <div class="about_header">
+                    <h1>About <span>Me</span></h1>
+                </div>
+                <p>Hello, My name is faiza ziani and i am an experienced web developer having 4 years of experience in field. For the last three years, I have been working as a freelance web developer, helping clients bring their ideas to life through functional and aesthetically pleasing websites. My experience spans creating dynamic web applications, online courses, and customized solutions that meet the unique needs of each project. So if you
+                    are seeking for professional work,feel free to contact me Thank You :)</p>
+            </div>
+        </div>
+<div class="inner" id="skills">
+    <div class="header">
+        <h1 style="font-size: 2rem;"><span>My</span> Skills</h1>
+    </div>
+    <div class="skills">
+        <div class="skill-box">
+            <div class="skill-title">
+                <div class="img">
+                    <img class="skill-icon" src="https://cdn-icons-png.flaticon.com/256/174/174854.png" alt="">
+                </div>
+                <h3>HTML 5</h3>
+            </div>
+        </div>
+        <div class="skill-box">
+            <div class="skill-title">
+                <div class="img">
+                    <img class="skill-icon" src="https://delta-dev-software.fr/wp-content/uploads/2024/05/CSS-Logo.png" alt="">
+                </div>
+                <h3>CSS 3</h3>
+            </div>
+        </div>
+        <div class="skill-box">
+            <div class="skill-title">
+                <div class="img">
+                    <img class="skill-icon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1200px-Unofficial_JavaScript_logo_2.svg.png" alt="">
+                </div>
+                <h3>Javascript</h3>
+            </div>
+        </div>
+        <div class="skill-box">
+            <div class="skill-title">
+                <div class="img">
+                    <img class="skill-icon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/PHP-logo.svg/640px-PHP-logo.svg.png" alt="">
+                </div>
+                <h3>PHP</h3>
+            </div>
+        </div>
+        <div class="skill-box">
+            <div class="skill-title">
+                <div class="img">
+                    <img class="skill-icon" src="https://upload.wikimedia.org/wikipedia/fr/6/62/MySQL.svg" alt="">
+                </div>
+                <h3>MySql</h3>
+            </div>
+        </div>
+        <div class="skill-box">
+            <div class="skill-title">
+                <div class="img">
+                    <img class="skill-icon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/800px-Bootstrap_logo.svg.png" alt="">
+                </div>
+                <h3>Bootstrap</h3>
+            </div>
+        </div>
+    </div>
+    <div class="header">
+        <h1 style="font-size: 2rem;">My <span>Recent</span> Projects</h1>
+    </div>
+        <div class="portfolio" id="portfolio" style="">
+           <div class="gallery">
+              <div class="project-img"  data-name="website">
+                 <img src="https://t3.ftcdn.net/jpg/03/45/29/56/360_F_345295622_gUzV6dU09syTrk49uSabBvhaEDBlJeFp.jpg" style="height: 100%;" alt="">
+                 <div class="overlay">
+                    <h4>PHP Learn & Quiz website</h4>
+                    <p>create with html css js php and mysql</p><br>
+                    <div class="action-area">
+                       <a href="http://46.20.34.169/plesk-site-preview/wg1484523.virtualuser.de/https/46.20.34.169/user/index.php" class="btn btn-light" target="_blank">Live Demo</a>
+                    </div>
+                 </div>
+              </div>
+              <div class="project-img" data-name="application">
+                 <img src="https://png.pngtree.com/thumb_back/fh260/background/20220311/pngtree-bed-rest-bedroom-five-star-hotel-image_990208.jpg" style="height: 100%;" alt="">
+                 <div class="overlay">
+                    <h4>Hotel Website</h4>
+                    <p>Create with html css bootstrap and javascript</p><br>
+                    <div class="action-area">
+                       <a href="https://faizazn.github.io/hotel-booking/" target="_blank" class="btn btn-light">Live Demo</a>
+                    </div>
+                 </div>
+              </div>
+              <div class="project-img" data-name="blog">
+                 <img src="data:image/jpeg;base64,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" style="height: 100%;" alt="">
+                 <div class="overlay">
+                    <h4>Car Rental website</h4>
+                    <p>Create with html and css</p><br>
+                    <div class="action-area">
+                       <a href="https://faizazn.github.io/car-rental/" target="_blank" class="btn btn-light" target="_blank">Live Demo</a>
+                    </div>
+                 </div>
+              </div>
+              <div class="project-img" data-name="website">
+                 <img src="https://as2.ftcdn.net/v2/jpg/02/79/66/21/1000_F_279662127_cUasW4kyl7NoRQvel0IyE58F3yt0gsF8.jpg" style="height: 100%;" alt="">
+                 <div class="overlay">
+                    <h4>Portfolio Website</h4>
+                    <p>Create With html css and javascript</p><br>
+                    <div class="action-area">
+                       <a href="https://faizazn.github.io/portfolio/" target="_blank" class="btn btn-light">Live Demo</a>
+                    </div>
+                 </div>
+              </div>
+              <div class="project-img" data-name="website">
+                 <img src="https://i.pinimg.com/originals/bf/0b/7e/bf0b7e3542939af59722b4f8b78c74de.jpg" style="height: 100%;" alt="">
+                 <div class="overlay">
+                    <h4>Company Website</h4>
+                    <p>Create with html css and javascript</p><br>
+                    <div class="action-area">
+                       <a href="https://faizazn.github.io/company/" class="btn btn-light" target="_blank">Live Demo</a>
+                    </div>
+                 </div>
+              </div>
+              <div class="project-img" data-name="application">
+                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGqxcuR3l3s61z5D32NtYn212JjyQLvF_45A&s" style="height: 100%;" alt="">
+                 <div class="overlay">
+                    <h4>Faculty management application</h4>
+                    <p>Create with html css php and mysql</p>
+                    <div class="action-area">
+                       <a href="" class="btn btn-light">Live Demo</a>
+                    </div>
+                 </div>
+              </div>
+             
+             
+           </div>
+        </div>
+    
+      <div class="container swiper" style="max-width: 1150px;" id="blog">
+        <div class="header">
+            <h1 style="font-size: 2rem;"><span>What</span> My <span>Clients</span> Say</h1>
+          </div><br><br>
+        <div class="slider-wrapper">
+          <div class="card-list swiper-wrapper">
+            <div class="card-item swiper-slide">
+               
+                    <div class="testimonial-author">
+                      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Flag_of_France.svg/langfr-225px-Flag_of_France.svg.png" alt="Author 1" class="author-photo">
+                      <div>
+                          <h3>Mohamed chouk</h3>
+                      </div>
+                  </div>
+                      <p class="testimonial-text">"Faiza is very professionel and good communicator i recommand her without hesitation perfect work"</p><br>
+                    <div class="star">
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+  
+                    </div>                
+            </div>
+    
+            <div class="card-item swiper-slide">
+                    <div class="testimonial-author">
+                      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Flag_of_France.svg/langfr-225px-Flag_of_France.svg.png" alt="Author 1" class="author-photo">
+                      <div>
+                          <h3>Amir Ben Lagha</h3>
+                      </div>
+                  </div>
+                      <p class="testimonial-text">"Very professional and attentive, the job is very well done. I highly recommend her"</p><br>
+                    <div class="star">
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+  
+                    </div>
+                    </div>
+            
+    
+            <div class="card-item swiper-slide">
+                    <div class="testimonial-author">
+                      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMcAAACtCAMAAAAztJvIAAAAFVBMVEUAAADvM0D92iXJrR3/3Sb5si7uI0Hc9J4uAAAAqUlEQVR4nO3PMQEAIAwDsAED/5JngK9v4iBVsdM70/etVN7w8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw+BnVWo/yKI1z3AAAAABJRU5ErkJggg==" alt="Author 1" class="author-photo">
+                      <div>
+                          <h3>Kenan Sunbul</h3>
+                      </div>
+                  </div>
+                      <p class="testimonial-text">"Very fast and just perfect! Thank you very much !"</p><br>
+                   <div class="star">
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+
+                   </div>
+                    </div>
+    
+            <div class="card-item swiper-slide">
+                    <div class="testimonial-author">
+                      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Flag_of_France.svg/langfr-225px-Flag_of_France.svg.png" alt="Author 1" class="author-photo">
+                      <div>
+                          <h3>Antoine Breuzet</h3>
+                      </div>
+                  </div>
+                      <p class="testimonial-text">"Perfect !!!!"</p><br>
+                      <div class="star">
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                      </div>
+            </div>
+    
+            <div class="card-item swiper-slide">
+                    <div class="testimonial-author">
+                      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Flag_of_France.svg/langfr-225px-Flag_of_France.svg.png" alt="Author 1" class="author-photo">
+                      <div>
+                          <h3>Pierre Fouquer</h3>
+                      </div>
+                  </div>
+                      <p class="testimonial-text">"Je recommande Madame Ziani qui est très professionnelle, agréable et rapide dans son travail. Merci beaucoup :)"</p><br>
+                     <div class="star">
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                     </div>
+                  </div>
+                  <div class="card-item swiper-slide">
+                        <div class="testimonial-author">
+                          <img src="data:image/png;base64,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" alt="Author 1" class="author-photo">
+                          <div>
+                              <h3>Khalid Abdullah Alamri</h3>
+                          </div>
+                      </div>
+                          <p class="testimonial-text">"fast delivery and nice work and nice person faiza"</p><br>
+                         <div class="star">
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                         </div>
+                      </div>
+                      <div class="card-item swiper-slide">
+                            <div class="testimonial-author">
+                              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Flag_of_France.svg/langfr-225px-Flag_of_France.svg.png" alt="Author 1" class="author-photo">
+                              <div>
+                                  <h3>Lilya Bouali</h3>
+                              </div>
+                          </div>
+                              <p class="testimonial-text">"Je recommande Faiza qui est très agréable et rapide dans son travail."</p><br>
+                             <div class="star">
+                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                <i class="fa-solid fa-star-half-stroke" style="color: #FFD43B;"></i>
+                          </div>
+                      </div>
+                      <div class="card-item swiper-slide">
+                            <div class="testimonial-author">
+                              <img src="data:image/png;base64,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" alt="Author 1" class="author-photo">
+                              <div>
+                                  <h3>Russell Richards</h3>
+                              </div>
+                          </div>
+                              <p class="testimonial-text">"Very helpful and made an amazingly designed website for my production business. Highly recommend"</p><br>
+                              <div class="star">
+                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                              </div>
+                       </div>
+                       <div class="card-item swiper-slide">
+                            <div class="testimonial-author">
+                              <img src="data:image/png;base64,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" alt="Author 1" class="author-photo">
+                              <div>
+                                  <h3>Mohamed Abdoulaye Dioum</h3>
+                              </div>
+                          </div>
+                              <p class="testimonial-text">"Very good skills and communisation"</p><br>
+                             <div class="star">
+                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                <i class="fa-regular fa-star" style="color: #FFD43B;"></i>   
+                             </div>                  
+                             </div>
+                      
+                       <div class="card-item swiper-slide">
+                            <div class="testimonial-author">
+                              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPAAAACgCAMAAAAFBRFXAAAAGFBMVEUAAADdAAD/zgB2AADqAADZAAD2tQD/0wB1Ax0IAAAAnklEQVR4nO3PARGDAAwAsTJg+HeMDO6+iYPMAAAAAAAAAAAAAAAA8L1zmbmWmWMZ4TrhOuE64TrhOuE64TrhOuE64TrhOuE64TrhOuE64TrhOuE64TrhOuE64TrhOuE64bq5l5n/MvMsM79lhOuE64TrhOuE64TrhOuE64TrhOuE64TrhOuE64TrhOuE64TrhOuE64TrhOuE64TrhOte5L6m4VeOch0AAAAASUVORK5CYII=" alt="Author 1" class="author-photo">
+                              <div>
+                                  <h3>Johannes</h3>
+                              </div>
+                          </div>
+                              <p class="testimonial-text">"It was a great pleasure working with Faiza Ziani. She was very quick and efficient in handling the workflow. Moreover, her communication was impeccable, always pleasant and polite"</p><br>
+                             <div class="star">
+                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                             </div>
+                       </div>
+                       <div class="card-item swiper-slide">
+                            <div class="testimonial-author">
+                              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAACFCAMAAAApQEceAAAAllBMVEX/mTMSiAf/////kxz/48/L38sAgQAAAIYAAIAAAIPk5PLt7ff39/zn5/Tz8/rf3/DPz+erq9dkZLYAAI3a2u2Li8iRkcQ8PJ9AQKDKyua3t97W1u4wMJabm9DAwN+vr9hra7hmZqp9fcCystRZWa44OKBISKl4eMB+frtaWqkxMZ8lJZJubrSjo9ISEo1UVK0cHJGgoMiRG29wAAADHUlEQVR4nO2Z2XKbMBRA3dtFEhISiwWWE5YIbHBs4uT/f67CmXbaTvpmtYK558nm5XJGSHfRZoMgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIL8bz6vhM2XlbCBlYAioeFbRMbRjVh6DuRVRGzr8ZATSkl+GOut8BnLo4hIipJQRl52uxfCKCmLxF8wjyK8KBnLx64ojCmKbswZ2xXcWzhvIg+nnB2vlkdCci5FxO31yPLT1lc8XyLJ2a3GNhawB9i6t9+D4MqtyvnBU0BPIg9nRp5r5b6kVEKSgEzdtxbVz8SbiR8RdWCP887ex6AqqGuoFMRubSB5ZGXsJaQXEXEhNJVKQNKAaKHroBXQJCCUTCm5eDmGvYikr+TJwIMRYBNo466LW0gsCJOAeSKvjY+YPkTUibbKrcs+Feoqddp1qRZXJZq9WwvV0qfIQ1AfIl1OEm44iKqAQZvL29vFFANUkwRu4oTknYegHkT4yGgCUZoKGIc4n/px7KecD1aIZoogocx6yIseRLZn8ua+IVn3e9H21UFnmT5UfSbcA1c6ijdy9pAWPYgYVtZq/hG1h/rYD5UTGfqjOWa3p6o+MHP/qPcXERM9xWKvh0nJ6TwMOuv7TGf6tZDRXutGxic63f8Evr+ItCyfk2E8tdd2ylrrqsXcttdq/jsnwyRn9v7dyf1FeEbHWHDXUG3TrOyrF+J4qbIyS7euweIiHml2/93uQaSnnVSmmbQdWltV5EZV2XawemqMkh3tFyGylhX5c48M8x4ZFrhH5lMrWsOptZo88kFm75eZ2bn9UWuJX2stO/6stcZl1FofVb/1EqvfD/qR6bd+pF1KP/J7h5gtt0P8e88eLaxnh7hcxxRlPXOtm8mHk8bnhU0a3dufcrq7Wq7eZ7+K2+uOLnD2O0/jd/M0vtHaGFdiLXYa71jJ/Qjcbqx0+X5jVerl3ljdWMcd4r8ERUJj83UlbL6thM2nlYAioYEioYEioYEioYEioYEioYEioYEioYEioYEioYEioYEioYEioYEioYEioYEioYEioYEioYEioYEioYEiofEdJyHA/hTmu54AAAAASUVORK5CYII=" alt="Author 1" class="author-photo">
+                              <div>
+                                  <h3>Parth Chunara</h3>
+                              </div>
+                          </div>
+                              <p class="testimonial-text">"Faiza was very helpful, polite and professional on projects. will work with her again for sure :)"</p><br>
+                             <div class="star">
+                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                             </div>
+                       </div>
+                       <div class="card-item swiper-slide">
+                            <div class="testimonial-author">
+                              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMcAAAB3CAMAAACAEaSBAAAAb1BMVEUAak70KkEAbE8Abk/4KEH8JUD/I0D6J0BBZ03YNUOFVUk9Z027QkUlaU5oXEtvWUqtR0aYT0jlMkJdXUscak5QYUzvKUGKVEnROkR8VUngMUI2ZU3EP0VHYkybTUi2REXKO0QwaE6jS0dWYEx3WUtBOgrnAAACzElEQVR4nO2b25KiMBBAQweCMCAMIl5wRND//8YluIyzo9aMJLUduvq8WL55qi8xlxaCYRiGYRiGYRiGYZhPAECUbf22WCze6rYcvs8OkGK96ZJTUflKqbAqtkm3OQs5KxWActn0BmHo+76n6T/7L1WRLNPZRAVgmVcq9B4RKq+5zMIEZLb1Av+hxRCZwIt2zqcXwC5SzyX+qqh9LJw2kfUh/MliMAm3HxL7xz4FyuOPsbjFJE8dDYlMt8EvLTRB5GZI4OI97lFPQxLEDkZEvvu/zambSe5eRPLXgnElSLB/9jdk80ppfBE5uRWRfJqGYxGR3VSNXqRxJiIyU5M1PE9tHBGBc2Wg0XetpRvtV+5fbrj/ehROrOyyM8kqjUocyCxYmWXVEBEHMguiKQvgN499iq1h1qtGHOhZhVmRj5S4mQWxHQ3/HTcgZWTJY19jasDKRnVo1A4zsWRi3qyu+FvExILSfO0YUYiLOmzsVIcmPCIGpLGVVn1infA0WkvdavAoPrASC9bTt0/3BBmaR2yr62rUEctDWiwPXSBYhS4tlkfvUWF5gL3VQ6Ow8qq0GQ69EuJoQG3ZA6nxwtqyxwrJY2WzXfUeGU6hw9KyxwXJg0o8zkTqg0i/orJ+kFnPqfy/ovJ/l8r+g8p+ULSGNzhfQdyfC2HtGA73vMTWKbUmQDyphtSahqdaxANeebB2vhthXhxQOW+ncv9B5j6Kyv0gnftaIvfndt4z4P21ukHkfYn5dsrfYxf5FVhXZiJI5yR3yMxkH+JArxoxep/o0htemCyiGkeS6gqV97tU3lNPe98eulQbI7DzX5032DhVGyOyjijMf5CZxxFU5qMEmXk1QWV+UKPnOQv1UMUPVZVns5jn1ACUq/xuvjaY2XztAEhYx90hqrxQzzt7VXTo4rnNO1/R8+bp5/x5Os/5c4ZhGIZhGIZhGIb5v/wBrN8siB8MY3gAAAAASUVORK5CYII=" alt="Author 1" class="author-photo">
+                              <div>
+                                  <h3>Haseen Fuad</h3>
+                              </div>
+                          </div>
+                              <p class="testimonial-text">"really good and helpful"</p><br>
+                              <div class="star">
+                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i> 
+                              </div>                   
+                      
+                       </div>
+                       <div class="card-item swiper-slide">
+                            <div class="testimonial-author">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Flag_of_France.svg/langfr-225px-Flag_of_France.svg.png" alt="Author 1" class="author-photo">
+                                <div>
+                                  <h3>Jade Aubrey</h3>
+                              </div>
+                          </div>
+                              <p class="testimonial-text">"Très professionnelle, réponse rapide et travail parfait, merci :) Je recommande à 100% Faiza Ziani"</p><br>
+                              <div class="star">
+                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                              </div>
+                          </div>
+                       
+            </div>
+    
+           
+          </div>
+    
+          <div class="swiper-slide-button swiper-button-prev" style="color:#fff"></div>
+          <div class="swiper-slide-button swiper-button-next" style="color:#fff"></div>
+        </div>
+      </div>
+    <!--contact section start-->
+<section class="contactt" id="contactt">
+    <div class="header">
+      <h1 style="font-size:2rem"><span>Contact</span> Me</h1>
+  </div><br><br>
+    <div class="wrapper">
+      <div class="contact-section">
+            <div class="contact-container">
+              <div class="contact-box">
+                <div class="contact-icon">
+                  <i class="far fa-envelope"></i>
+                </div>
+                <div class="contact-title">E-mail</div>
+                <div class="contact-desc">
+                  faizaziani133@gmail.com
+                </div>
+              </div>
+              <div class="contact-box">
+                <div class="contact-icon">
+                  <i class="fas fa-map"></i>
+                </div>
+                <div class="contact-title">Location</div>
+                <div class="contact-desc">
+                  Maroc , taza
+                </div>
+              </div>
+              <div class="contact-box">
+                <div class="contact-icon">
+                  <i class="fas fa-mobile-alt"></i>
+                </div>
+                <div class="contact-title">Mobile</div>
+                <div class="contact-desc">
+                 06 97 00 16 13
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+  </section>
+</div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="app.js"></script>
+    <script>
+     /* let currentSlide = 0;
+      
+      function showSlide(index) {
+          const slides = document.querySelectorAll('.slide');
+          const totalSlides = slides.length;
+      
+          if (index >= totalSlides) {
+              currentSlide = 0;
+          } else if (index < 0) {
+              currentSlide = totalSlides - 1;
+          } else {
+              currentSlide = index;
+          }
+      
+          const offset = -currentSlide * 100;
+          document.querySelector('.slider').style.transform = `translateX(${offset}%)`;
+      }
+      
+      function nextSlide() {
+          showSlide(currentSlide + 1);
+      }
+      
+      function prevSlide() {
+          showSlide(currentSlide - 1);
+      }
+      
+      document.addEventListener('DOMContentLoaded', () => {
+          showSlide(currentSlide);
+      });*/
+      
+      
+          </script>
+         
+
+      
+</body>
+</html>
